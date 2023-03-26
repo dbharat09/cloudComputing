@@ -1,0 +1,1187 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/bdumpa/job_17256613
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/bdumpa/expansecluster...
+myHadoop: Backing up old config dir to /home/bdumpa/expansecluster.4...
+renamed '/home/bdumpa/expansecluster' -> '/home/bdumpa/expansecluster.4'
+myHadoop: Designating exp-4-27 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-4-27
+WARNING: /scratch/bdumpa/job_17256613/pids does not exist. Creating.
+WARNING: /scratch/bdumpa/job_17256613/logs does not exist. Creating.
+2022-11-01 15:43:39,100 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-4-27/198.202.103.48
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/bdumpa/expansecluster:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-11-01 15:43:39,106 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-01 15:43:39,159 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-11-01 15:43:39,497 INFO common.Util: Assuming 'file' scheme for path /scratch/bdumpa/job_17256613/namenode_data in configuration.
+2022-11-01 15:43:39,497 INFO common.Util: Assuming 'file' scheme for path /scratch/bdumpa/job_17256613/namenode_data in configuration.
+Formatting using clusterid: CID-bf045951-c852-429c-a8d4-3ee489ff80a3
+2022-11-01 15:43:39,519 INFO namenode.FSEditLog: Edit logging is async:true
+2022-11-01 15:43:39,539 INFO namenode.FSNamesystem: KeyProvider: null
+2022-11-01 15:43:39,540 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-11-01 15:43:39,540 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-11-01 15:43:39,582 INFO namenode.FSNamesystem: fsOwner             = bdumpa (auth:SIMPLE)
+2022-11-01 15:43:39,582 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-11-01 15:43:39,582 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-11-01 15:43:39,582 INFO namenode.FSNamesystem: HA Enabled: false
+2022-11-01 15:43:39,694 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-11-01 15:43:39,701 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-11-01 15:43:39,701 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-11-01 15:43:39,703 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-11-01 15:43:39,704 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Nov 01 15:43:39
+2022-11-01 15:43:39,704 INFO util.GSet: Computing capacity for map BlocksMap
+2022-11-01 15:43:39,704 INFO util.GSet: VM type       = 64-bit
+2022-11-01 15:43:39,705 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-11-01 15:43:39,705 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-11-01 15:43:39,738 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-11-01 15:43:39,738 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-11-01 15:43:39,742 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-11-01 15:43:39,743 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-11-01 15:43:39,758 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-11-01 15:43:39,758 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-11-01 15:43:39,758 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-11-01 15:43:39,758 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-11-01 15:43:39,765 INFO util.GSet: Computing capacity for map INodeMap
+2022-11-01 15:43:39,765 INFO util.GSet: VM type       = 64-bit
+2022-11-01 15:43:39,765 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-11-01 15:43:39,765 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-11-01 15:43:39,779 INFO namenode.FSDirectory: ACLs enabled? false
+2022-11-01 15:43:39,779 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-11-01 15:43:39,779 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-11-01 15:43:39,779 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-11-01 15:43:39,784 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-11-01 15:43:39,785 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-11-01 15:43:39,788 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-11-01 15:43:39,788 INFO util.GSet: VM type       = 64-bit
+2022-11-01 15:43:39,789 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-11-01 15:43:39,789 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-11-01 15:43:39,799 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-11-01 15:43:39,799 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-11-01 15:43:39,799 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-11-01 15:43:39,801 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-11-01 15:43:39,802 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-11-01 15:43:39,803 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-11-01 15:43:39,803 INFO util.GSet: VM type       = 64-bit
+2022-11-01 15:43:39,803 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-11-01 15:43:39,803 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-11-01 15:43:39,820 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1367302772-198.202.103.48-1667342619816
+2022-11-01 15:43:39,833 INFO common.Storage: Storage directory /scratch/bdumpa/job_17256613/namenode_data has been successfully formatted.
+2022-11-01 15:43:39,857 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/bdumpa/job_17256613/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-11-01 15:43:39,936 INFO namenode.FSImageFormatProtobuf: Image file /scratch/bdumpa/job_17256613/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-11-01 15:43:39,949 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-11-01 15:43:39,953 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-11-01 15:43:39,953 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-4-27/198.202.103.48
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/bdumpa/expansecluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/bdumpa/expansecluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [exp-4-27]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:FfFxX2frugjKUDaR/EbYhdcVrphEdzcd3AyKPh3mRQM.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/bdumpa/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/bdumpa/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-4-27]
+starting org.apache.spark.deploy.master.Master, logging to /scratch/bdumpa/job_17256613/logs/spark-bdumpa-org.apache.spark.deploy.master.Master-1-exp-4-27.out
+exp-4-27: starting org.apache.spark.deploy.worker.Worker, logging to /expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/logs/spark-bdumpa-org.apache.spark.deploy.worker.Worker-1-exp-4-27.out
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-11-01 15:44:07,476 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-01 15:44:07,633 INFO spark.SparkContext: Running Spark version 3.1.2
+2022-11-01 15:44:07,664 INFO resource.ResourceUtils: ==============================================================
+2022-11-01 15:44:07,665 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-11-01 15:44:07,665 INFO resource.ResourceUtils: ==============================================================
+2022-11-01 15:44:07,665 INFO spark.SparkContext: Submitted application: Matrix_Addition
+2022-11-01 15:44:07,680 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-11-01 15:44:07,696 INFO resource.ResourceProfile: Limiting resource is cpu
+2022-11-01 15:44:07,696 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-11-01 15:44:07,729 INFO spark.SecurityManager: Changing view acls to: bdumpa
+2022-11-01 15:44:07,729 INFO spark.SecurityManager: Changing modify acls to: bdumpa
+2022-11-01 15:44:07,729 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-11-01 15:44:07,729 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-11-01 15:44:07,729 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(bdumpa); groups with view permissions: Set(); users  with modify permissions: Set(bdumpa); groups with modify permissions: Set()
+2022-11-01 15:44:07,899 INFO util.Utils: Successfully started service 'sparkDriver' on port 36077.
+2022-11-01 15:44:07,923 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-11-01 15:44:07,945 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-11-01 15:44:07,959 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-11-01 15:44:07,959 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-11-01 15:44:07,962 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-11-01 15:44:07,972 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-d610feb8-dd1a-43a3-83a0-8e9647f4e431
+2022-11-01 15:44:07,996 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2022-11-01 15:44:08,008 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-11-01 15:44:08,076 INFO util.log: Logging initialized @1703ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-11-01 15:44:08,123 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.2+9
+2022-11-01 15:44:08,136 INFO server.Server: Started @1763ms
+2022-11-01 15:44:08,163 INFO server.AbstractConnector: Started ServerConnector@6bdc2a41{HTTP/1.1, (http/1.1)}{exp-4-27:4040}
+2022-11-01 15:44:08,163 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-11-01 15:44:08,180 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@34b27915{/jobs,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,182 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6b8280e6{/jobs/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,182 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@55259aa7{/jobs/job,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,185 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@45e1aa48{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,185 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2e807c54{/stages,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,186 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@242a209e{/stages/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,186 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b8bd798{/stages/stage,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,188 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@43e1692f{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,188 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@27df0f3d{/stages/pool,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,189 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44550792{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,190 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@474c9131{/storage,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,190 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@aa4d8cc{/storage/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,191 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1fde0371{/storage/rdd,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,192 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c8e67b9{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,192 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@49206065{/environment,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,193 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1317b708{/environment/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,193 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2e51d054{/executors,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,194 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@615e3f51{/executors/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,195 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@608bc8f8{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,197 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44a6a68e{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,203 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@79316f3a{/static,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,204 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@19ee1ae6{/,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,205 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1174a305{/api,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,206 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3f685162{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,206 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@987455b{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,207 INFO ui.SparkUI: Bound SparkUI to exp-4-27, and started at http://exp-4-27.expanse.sdsc.edu:4040
+2022-11-01 15:44:08,222 INFO spark.SparkContext: Added JAR file:/home/bdumpa/project4/add.jar at spark://exp-4-27.expanse.sdsc.edu:36077/jars/add.jar with timestamp 1667342647627
+2022-11-01 15:44:08,378 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://exp-4-27:7077...
+2022-11-01 15:44:08,413 INFO client.TransportClientFactory: Successfully created connection to exp-4-27/198.202.103.48:7077 after 21 ms (0 ms spent in bootstraps)
+2022-11-01 15:44:08,522 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20221101154408-0000
+2022-11-01 15:44:08,528 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45083.
+2022-11-01 15:44:08,528 INFO netty.NettyBlockTransferService: Server created on exp-4-27.expanse.sdsc.edu:45083
+2022-11-01 15:44:08,530 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-11-01 15:44:08,534 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-4-27.expanse.sdsc.edu, 45083, None)
+2022-11-01 15:44:08,537 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221101154408-0000/0 on worker-20221101154400-198.202.103.48-42819 (198.202.103.48:42819) with 128 core(s)
+2022-11-01 15:44:08,538 INFO storage.BlockManagerMasterEndpoint: Registering block manager exp-4-27.expanse.sdsc.edu:45083 with 434.4 MiB RAM, BlockManagerId(driver, exp-4-27.expanse.sdsc.edu, 45083, None)
+2022-11-01 15:44:08,539 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221101154408-0000/0 on hostPort 198.202.103.48:42819 with 128 core(s), 1024.0 MiB RAM
+2022-11-01 15:44:08,540 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-4-27.expanse.sdsc.edu, 45083, None)
+2022-11-01 15:44:08,541 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-4-27.expanse.sdsc.edu, 45083, None)
+2022-11-01 15:44:08,641 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/0 is now RUNNING
+2022-11-01 15:44:08,664 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@18137eab{/metrics/json,null,AVAILABLE,@Spark}
+2022-11-01 15:44:08,696 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2022-11-01 15:44:09,026 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 177.3 KiB, free 434.2 MiB)
+2022-11-01 15:44:09,077 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 434.2 MiB)
+2022-11-01 15:44:09,080 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-01 15:44:09,082 INFO spark.SparkContext: Created broadcast 0 from textFile at Add.scala:44
+2022-11-01 15:44:09,419 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-11-01 15:44:09,444 INFO net.NetworkTopology: Adding a new node: /default-rack/198.202.103.48:9866
+2022-11-01 15:44:09,496 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 177.3 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,504 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,505 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 27.6 KiB, free: 434.3 MiB)
+2022-11-01 15:44:09,505 INFO spark.SparkContext: Created broadcast 1 from textFile at Add.scala:44
+2022-11-01 15:44:09,520 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-11-01 15:44:09,523 INFO net.NetworkTopology: Adding a new node: /default-rack/198.202.103.48:9866
+2022-11-01 15:44:09,567 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2022-11-01 15:44:09,570 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+2022-11-01 15:44:09,571 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2022-11-01 15:44:09,571 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-11-01 15:44:09,589 INFO spark.SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+2022-11-01 15:44:09,601 INFO scheduler.DAGScheduler: Registering RDD 7 (map at Add.scala:44) as input to shuffle 2
+2022-11-01 15:44:09,603 INFO scheduler.DAGScheduler: Registering RDD 9 (map at Add.scala:46) as input to shuffle 1
+2022-11-01 15:44:09,604 INFO scheduler.DAGScheduler: Registering RDD 2 (map at Add.scala:44) as input to shuffle 3
+2022-11-01 15:44:09,605 INFO scheduler.DAGScheduler: Registering RDD 4 (map at Add.scala:46) as input to shuffle 0
+2022-11-01 15:44:09,606 INFO scheduler.DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 2 output partitions
+2022-11-01 15:44:09,606 INFO scheduler.DAGScheduler: Final stage: ResultStage 4 (runJob at SparkHadoopWriter.scala:83)
+2022-11-01 15:44:09,606 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1, ShuffleMapStage 3)
+2022-11-01 15:44:09,608 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1, ShuffleMapStage 3)
+2022-11-01 15:44:09,612 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:44:09,633 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.9 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,636 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,637 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:44:09,637 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:44:09,649 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:44:09,649 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+2022-11-01 15:44:09,665 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:44:09,669 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 6.9 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,672 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 434.0 MiB)
+2022-11-01 15:44:09,672 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:44:09,672 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:44:09,673 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:44:09,673 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 2 tasks resource profile 0
+2022-11-01 15:44:10,243 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.48:58298) with ID 0,  ResourceProfileId 0
+2022-11-01 15:44:10,345 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.48:41229 with 434.4 MiB RAM, BlockManagerId(0, 198.202.103.48, 41229, None)
+2022-11-01 15:44:10,441 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 0) (198.202.103.48, executor 0, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:10,443 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.0 (TID 1) (198.202.103.48, executor 0, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:10,647 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 198.202.103.48:41229 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:44:10,648 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.48:41229 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:44:10,887 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.48:41229 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-01 15:44:10,887 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.48:41229 (size: 27.6 KiB, free: 434.3 MiB)
+2022-11-01 15:44:13,296 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 2) (198.202.103.48, executor 0, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:13,296 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 3) (198.202.103.48, executor 0, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:20,388 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 0) in 9959 ms on 198.202.103.48 (executor 0) (1/2)
+2022-11-01 15:44:21,642 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.0 (TID 1) in 11199 ms on 198.202.103.48 (executor 0) (1/2)
+2022-11-01 15:44:22,371 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 3) in 9075 ms on 198.202.103.48 (executor 0) (2/2)
+2022-11-01 15:44:22,372 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2022-11-01 15:44:22,373 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Add.scala:44) finished in 12.705 s
+2022-11-01 15:44:22,373 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:44:22,374 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 0)
+2022-11-01 15:44:22,374 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:44:22,374 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:44:22,376 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:44:22,387 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 7.8 KiB, free 434.0 MiB)
+2022-11-01 15:44:22,388 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 434.0 MiB)
+2022-11-01 15:44:22,389 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:44:22,390 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:44:22,390 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:44:22,390 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 2 tasks resource profile 0
+2022-11-01 15:44:22,392 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 4) (198.202.103.48, executor 0, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:22,393 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 5) (198.202.103.48, executor 0, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:22,414 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.48:41229 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:44:22,438 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58298
+2022-11-01 15:44:22,652 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 2) in 9359 ms on 198.202.103.48 (executor 0) (2/2)
+2022-11-01 15:44:22,652 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2022-11-01 15:44:22,653 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Add.scala:44) finished in 13.029 s
+2022-11-01 15:44:22,653 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:44:22,653 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 3)
+2022-11-01 15:44:22,653 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 4)
+2022-11-01 15:44:22,653 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:44:22,654 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:44:22,657 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 7.8 KiB, free 434.0 MiB)
+2022-11-01 15:44:22,658 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.0 MiB)
+2022-11-01 15:44:22,659 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:44:22,659 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:44:22,660 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:44:22,660 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+2022-11-01 15:44:22,661 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 6) (198.202.103.48, executor 0, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:22,662 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 7) (198.202.103.48, executor 0, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:44:22,675 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.48:41229 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:44:22,682 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58298
+2022-11-01 15:45:40,934 ERROR scheduler.TaskSchedulerImpl: Lost executor 0 on 198.202.103.48: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:45:40,938 WARN scheduler.TaskSetManager: Lost task 1.0 in stage 3.0 (TID 5) (198.202.103.48 executor 0): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:45:40,939 WARN scheduler.TaskSetManager: Lost task 0.0 in stage 3.0 (TID 4) (198.202.103.48 executor 0): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:45:40,940 WARN scheduler.TaskSetManager: Lost task 1.0 in stage 1.0 (TID 7) (198.202.103.48 executor 0): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:45:40,940 WARN scheduler.TaskSetManager: Lost task 0.0 in stage 1.0 (TID 6) (198.202.103.48 executor 0): ExecutorLostFailure (executor 0 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:45:40,942 INFO scheduler.DAGScheduler: Executor lost: 0 (epoch 2)
+2022-11-01 15:45:40,942 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/0 is now EXITED (Command exited with code 52)
+2022-11-01 15:45:40,943 INFO cluster.StandaloneSchedulerBackend: Executor app-20221101154408-0000/0 removed: Command exited with code 52
+2022-11-01 15:45:40,943 INFO storage.BlockManagerMaster: Removal of executor 0 requested
+2022-11-01 15:45:40,944 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asked to remove non-existent executor 0
+2022-11-01 15:45:40,945 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221101154408-0000/1 on worker-20221101154400-198.202.103.48-42819 (198.202.103.48:42819) with 128 core(s)
+2022-11-01 15:45:40,945 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221101154408-0000/1 on hostPort 198.202.103.48:42819 with 128 core(s), 1024.0 MiB RAM
+2022-11-01 15:45:40,946 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 0 from BlockManagerMaster.
+2022-11-01 15:45:40,947 INFO storage.BlockManagerMasterEndpoint: Removing block manager BlockManagerId(0, 198.202.103.48, 41229, None)
+2022-11-01 15:45:40,947 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 0 from BlockManagerMaster.
+2022-11-01 15:45:40,947 INFO storage.BlockManagerMaster: Removed 0 successfully in removeExecutor
+2022-11-01 15:45:40,947 INFO scheduler.DAGScheduler: Shuffle files lost for executor: 0 (epoch 2)
+2022-11-01 15:45:40,986 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/1 is now RUNNING
+2022-11-01 15:45:42,623 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.48:58328) with ID 1,  ResourceProfileId 0
+2022-11-01 15:45:42,719 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.48:45395 with 434.4 MiB RAM, BlockManagerId(1, 198.202.103.48, 45395, None)
+2022-11-01 15:45:42,851 INFO scheduler.TaskSetManager: Starting task 0.1 in stage 1.0 (TID 8) (198.202.103.48, executor 1, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:42,851 INFO scheduler.TaskSetManager: Starting task 1.1 in stage 1.0 (TID 9) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:42,852 INFO scheduler.TaskSetManager: Starting task 0.1 in stage 3.0 (TID 10) (198.202.103.48, executor 1, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:42,852 INFO scheduler.TaskSetManager: Starting task 1.1 in stage 3.0 (TID 11) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:43,029 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.48:45395 (size: 4.1 KiB, free: 434.4 MiB)
+2022-11-01 15:45:43,030 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.48:45395 (size: 4.2 KiB, free: 434.4 MiB)
+2022-11-01 15:45:43,267 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58328
+2022-11-01 15:45:43,268 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58328
+2022-11-01 15:45:43,311 WARN scheduler.TaskSetManager: Lost task 1.1 in stage 3.0 (TID 11) (198.202.103.48 executor 1): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=1, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:45:43,311 INFO scheduler.TaskSetManager: task 1.1 in stage 3.0 (TID 11) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:45:43,311 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2022-11-01 15:45:43,311 INFO scheduler.DAGScheduler: Marking ShuffleMapStage 3 (map at Add.scala:46) as failed due to a fetch failure from ShuffleMapStage 2 (map at Add.scala:44)
+2022-11-01 15:45:43,311 WARN scheduler.TaskSetManager: Lost task 0.1 in stage 1.0 (TID 8) (198.202.103.48 executor 1): FetchFailed(null, shuffleId=2, mapIndex=-1, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:45:43,312 INFO scheduler.TaskSetManager: task 0.1 in stage 1.0 (TID 8) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:45:43,312 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-11-01 15:45:43,312 WARN scheduler.TaskSetManager: Lost task 0.1 in stage 3.0 (TID 10) (198.202.103.48 executor 1): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:45:43,312 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (map at Add.scala:46) failed in 80.931 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:45:43,312 INFO scheduler.TaskSetManager: task 0.1 in stage 3.0 (TID 10) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:45:43,313 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2022-11-01 15:45:43,313 WARN scheduler.TaskSetManager: Lost task 1.1 in stage 1.0 (TID 9) (198.202.103.48 executor 1): FetchFailed(null, shuffleId=2, mapIndex=-1, mapId=-1, reduceId=1, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:45:43,313 INFO scheduler.DAGScheduler: Resubmitting ShuffleMapStage 2 (map at Add.scala:44) and ShuffleMapStage 3 (map at Add.scala:46) due to fetch failure
+2022-11-01 15:45:43,313 INFO scheduler.TaskSetManager: task 1.1 in stage 1.0 (TID 9) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:45:43,314 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-11-01 15:45:43,314 INFO scheduler.DAGScheduler: Marking ShuffleMapStage 1 (map at Add.scala:46) as failed due to a fetch failure from ShuffleMapStage 0 (map at Add.scala:44)
+2022-11-01 15:45:43,314 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at Add.scala:46) failed in 80.659 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:45:43,314 INFO scheduler.DAGScheduler: Resubmitting ShuffleMapStage 0 (map at Add.scala:44) and ShuffleMapStage 1 (map at Add.scala:46) due to fetch failure
+2022-11-01 15:45:43,515 INFO scheduler.DAGScheduler: Resubmitting failed stages
+2022-11-01 15:45:43,516 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:45:43,518 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 6.9 KiB, free 433.9 MiB)
+2022-11-01 15:45:43,519 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.9 MiB)
+2022-11-01 15:45:43,519 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:45:43,520 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:45:43,521 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:45:43,521 INFO scheduler.TaskSchedulerImpl: Adding task set 0.1 with 2 tasks resource profile 0
+2022-11-01 15:45:43,522 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:45:43,522 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.1 (TID 12) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:43,524 INFO memory.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 6.9 KiB, free 433.9 MiB)
+2022-11-01 15:45:43,524 INFO memory.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.9 MiB)
+2022-11-01 15:45:43,525 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:45:43,525 INFO spark.SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:45:43,526 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:45:43,526 INFO scheduler.TaskSchedulerImpl: Adding task set 2.1 with 2 tasks resource profile 0
+2022-11-01 15:45:43,527 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.1 (TID 13) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:43,549 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.48:45395 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:45:43,550 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 198.202.103.48:45395 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:45:43,562 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.48:45395 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-01 15:45:43,564 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.48:45395 (size: 27.6 KiB, free: 434.3 MiB)
+2022-11-01 15:45:47,292 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.1 (TID 14) (198.202.103.48, executor 1, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:47,293 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.1 (TID 15) (198.202.103.48, executor 1, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:45:52,616 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.1 (TID 13) in 9090 ms on 198.202.103.48 (executor 1) (1/2)
+2022-11-01 15:45:52,617 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.1 (TID 12) in 9095 ms on 198.202.103.48 (executor 1) (1/2)
+2022-11-01 15:46:05,377 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.1 (TID 14) in 18085 ms on 198.202.103.48 (executor 1) (2/2)
+2022-11-01 15:46:05,377 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.1, whose tasks have all completed, from pool 
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Add.scala:44) finished in 21.861 s
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2)
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:46:05,379 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:46:05,380 INFO scheduler.OutputCommitCoordinator: Reusing state from previous attempt of stage 1.
+2022-11-01 15:46:05,382 INFO memory.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 7.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:05,384 INFO memory.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 433.9 MiB)
+2022-11-01 15:46:05,384 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:46:05,385 INFO spark.SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:05,385 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:05,385 INFO scheduler.TaskSchedulerImpl: Adding task set 1.1 with 2 tasks resource profile 0
+2022-11-01 15:46:05,387 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.1 (TID 16) (198.202.103.48, executor 1, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:05,387 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.1 (TID 17) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:05,403 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 198.202.103.48:45395 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:46:05,411 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58328
+2022-11-01 15:46:05,660 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.1 (TID 15) in 18367 ms on 198.202.103.48 (executor 1) (2/2)
+2022-11-01 15:46:05,660 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.1, whose tasks have all completed, from pool 
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Add.scala:44) finished in 22.137 s
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 1)
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:46:05,661 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:46:05,662 INFO scheduler.OutputCommitCoordinator: Reusing state from previous attempt of stage 3.
+2022-11-01 15:46:05,664 INFO memory.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 7.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:05,666 INFO memory.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 433.9 MiB)
+2022-11-01 15:46:05,666 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:46:05,667 INFO spark.SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:05,667 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:05,667 INFO scheduler.TaskSchedulerImpl: Adding task set 3.1 with 2 tasks resource profile 0
+2022-11-01 15:46:05,668 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.1 (TID 18) (198.202.103.48, executor 1, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:05,668 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.1 (TID 19) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:05,678 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 198.202.103.48:45395 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:46:05,682 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58328
+2022-11-01 15:46:38,561 WARN scheduler.TaskSetManager: Lost task 1.0 in stage 1.1 (TID 17) (198.202.103.48 executor 1): java.lang.OutOfMemoryError: Java heap space
+	at Add$.toBlock(Add.scala:24)
+	at Add$.$anonfun$createBlockMatrix$2(Add.scala:46)
+	at Add$$$Lambda$789/0x000000010069f040.apply(Unknown Source)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:156)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$538/0x0000000100571840.apply(Unknown Source)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:46:38,562 INFO scheduler.TaskSetManager: Starting task 1.1 in stage 1.1 (TID 20) (198.202.103.48, executor 1, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:39,054 ERROR scheduler.TaskSchedulerImpl: Lost executor 1 on 198.202.103.48: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:46:39,054 WARN scheduler.TaskSetManager: Lost task 1.1 in stage 1.1 (TID 20) (198.202.103.48 executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:46:39,054 WARN scheduler.TaskSetManager: Lost task 0.0 in stage 1.1 (TID 16) (198.202.103.48 executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:46:39,054 WARN scheduler.TaskSetManager: Lost task 1.0 in stage 3.1 (TID 19) (198.202.103.48 executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:46:39,055 WARN scheduler.TaskSetManager: Lost task 0.0 in stage 3.1 (TID 18) (198.202.103.48 executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:46:39,055 INFO scheduler.DAGScheduler: Executor lost: 1 (epoch 5)
+2022-11-01 15:46:39,055 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 1 from BlockManagerMaster.
+2022-11-01 15:46:39,056 INFO storage.BlockManagerMasterEndpoint: Removing block manager BlockManagerId(1, 198.202.103.48, 45395, None)
+2022-11-01 15:46:39,056 INFO storage.BlockManagerMaster: Removed 1 successfully in removeExecutor
+2022-11-01 15:46:39,056 INFO scheduler.DAGScheduler: Shuffle files lost for executor: 1 (epoch 5)
+2022-11-01 15:46:39,636 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/1 is now EXITED (Command exited with code 52)
+2022-11-01 15:46:39,636 INFO cluster.StandaloneSchedulerBackend: Executor app-20221101154408-0000/1 removed: Command exited with code 52
+2022-11-01 15:46:39,636 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 1 from BlockManagerMaster.
+2022-11-01 15:46:39,636 INFO storage.BlockManagerMaster: Removal of executor 1 requested
+2022-11-01 15:46:39,636 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asked to remove non-existent executor 1
+2022-11-01 15:46:39,638 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221101154408-0000/2 on worker-20221101154400-198.202.103.48-42819 (198.202.103.48:42819) with 128 core(s)
+2022-11-01 15:46:39,638 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221101154408-0000/2 on hostPort 198.202.103.48:42819 with 128 core(s), 1024.0 MiB RAM
+2022-11-01 15:46:39,663 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/2 is now RUNNING
+2022-11-01 15:46:41,283 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.48:58366) with ID 2,  ResourceProfileId 0
+2022-11-01 15:46:41,387 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.48:34433 with 434.4 MiB RAM, BlockManagerId(2, 198.202.103.48, 34433, None)
+2022-11-01 15:46:41,456 INFO scheduler.TaskSetManager: Starting task 0.1 in stage 1.1 (TID 21) (198.202.103.48, executor 2, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:41,456 INFO scheduler.TaskSetManager: Starting task 1.2 in stage 1.1 (TID 22) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:41,456 INFO scheduler.TaskSetManager: Starting task 0.1 in stage 3.1 (TID 23) (198.202.103.48, executor 2, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:41,456 INFO scheduler.TaskSetManager: Starting task 1.1 in stage 3.1 (TID 24) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:41,614 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 198.202.103.48:34433 (size: 4.1 KiB, free: 434.4 MiB)
+2022-11-01 15:46:41,619 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 198.202.103.48:34433 (size: 4.2 KiB, free: 434.4 MiB)
+2022-11-01 15:46:41,852 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58366
+2022-11-01 15:46:41,853 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58366
+2022-11-01 15:46:41,893 WARN scheduler.TaskSetManager: Lost task 0.1 in stage 3.1 (TID 23) (198.202.103.48 executor 2): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:46:41,894 INFO scheduler.TaskSetManager: task 0.1 in stage 3.1 (TID 23) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:46:41,894 INFO scheduler.DAGScheduler: Marking ShuffleMapStage 3 (map at Add.scala:46) as failed due to a fetch failure from ShuffleMapStage 2 (map at Add.scala:44)
+2022-11-01 15:46:41,894 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (map at Add.scala:46) failed in 36.232 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:46:41,894 WARN scheduler.TaskSetManager: Lost task 1.1 in stage 3.1 (TID 24) (198.202.103.48 executor 2): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=1, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:46:41,894 INFO scheduler.DAGScheduler: Resubmitting ShuffleMapStage 2 (map at Add.scala:44) and ShuffleMapStage 3 (map at Add.scala:46) due to fetch failure
+2022-11-01 15:46:41,895 INFO scheduler.TaskSetManager: task 1.1 in stage 3.1 (TID 24) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:46:41,895 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.1, whose tasks have all completed, from pool 
+2022-11-01 15:46:41,896 WARN scheduler.TaskSetManager: Lost task 1.2 in stage 1.1 (TID 22) (198.202.103.48 executor 2): FetchFailed(null, shuffleId=2, mapIndex=-1, mapId=-1, reduceId=1, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:46:41,896 INFO scheduler.TaskSetManager: task 1.2 in stage 1.1 (TID 22) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:46:41,896 INFO scheduler.DAGScheduler: Marking ShuffleMapStage 1 (map at Add.scala:46) as failed due to a fetch failure from ShuffleMapStage 0 (map at Add.scala:44)
+2022-11-01 15:46:41,896 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at Add.scala:46) failed in 36.515 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:46:41,896 INFO scheduler.DAGScheduler: Resubmitting ShuffleMapStage 0 (map at Add.scala:44) and ShuffleMapStage 1 (map at Add.scala:46) due to fetch failure
+2022-11-01 15:46:41,897 WARN scheduler.TaskSetManager: Lost task 0.1 in stage 1.1 (TID 21) (198.202.103.48 executor 2): FetchFailed(null, shuffleId=2, mapIndex=-1, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 2
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:46:41,897 INFO scheduler.TaskSetManager: task 0.1 in stage 1.1 (TID 21) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:46:41,897 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.1, whose tasks have all completed, from pool 
+2022-11-01 15:46:42,095 INFO scheduler.DAGScheduler: Resubmitting failed stages
+2022-11-01 15:46:42,096 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:46:42,099 INFO memory.MemoryStore: Block broadcast_10 stored as values in memory (estimated size 6.9 KiB, free 433.9 MiB)
+2022-11-01 15:46:42,100 INFO memory.MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:42,101 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:46:42,101 INFO spark.SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:42,102 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:42,102 INFO scheduler.TaskSchedulerImpl: Adding task set 0.2 with 2 tasks resource profile 0
+2022-11-01 15:46:42,103 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:46:42,103 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.2 (TID 25) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:42,105 INFO memory.MemoryStore: Block broadcast_11 stored as values in memory (estimated size 6.9 KiB, free 433.9 MiB)
+2022-11-01 15:46:42,106 INFO memory.MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:42,107 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:46:42,107 INFO spark.SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:42,107 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:42,107 INFO scheduler.TaskSchedulerImpl: Adding task set 2.2 with 2 tasks resource profile 0
+2022-11-01 15:46:42,109 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.2 (TID 26) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:42,129 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 198.202.103.48:34433 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:46:42,129 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 198.202.103.48:34433 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:46:42,143 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.48:34433 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-01 15:46:42,144 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.48:34433 (size: 27.6 KiB, free: 434.3 MiB)
+2022-11-01 15:46:45,293 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.2 (TID 27) (198.202.103.48, executor 2, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:45,293 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.2 (TID 28) (198.202.103.48, executor 2, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:51,574 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.2 (TID 26) in 9466 ms on 198.202.103.48 (executor 2) (1/2)
+2022-11-01 15:46:52,338 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.2 (TID 25) in 10235 ms on 198.202.103.48 (executor 2) (1/2)
+2022-11-01 15:46:53,777 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.2 (TID 27) in 8485 ms on 198.202.103.48 (executor 2) (2/2)
+2022-11-01 15:46:53,777 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.2, whose tasks have all completed, from pool 
+2022-11-01 15:46:53,777 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Add.scala:44) finished in 11.680 s
+2022-11-01 15:46:53,777 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:46:53,777 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2)
+2022-11-01 15:46:53,777 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:46:53,777 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:46:53,778 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:46:53,778 INFO scheduler.OutputCommitCoordinator: Reusing state from previous attempt of stage 1.
+2022-11-01 15:46:53,780 INFO memory.MemoryStore: Block broadcast_12 stored as values in memory (estimated size 7.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:53,781 INFO memory.MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 433.9 MiB)
+2022-11-01 15:46:53,782 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:46:53,782 INFO spark.SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:53,783 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:53,783 INFO scheduler.TaskSchedulerImpl: Adding task set 1.2 with 2 tasks resource profile 0
+2022-11-01 15:46:53,784 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.2 (TID 29) (198.202.103.48, executor 2, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:53,784 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.2 (TID 30) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:53,801 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 198.202.103.48:34433 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:46:53,807 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58366
+2022-11-01 15:46:54,644 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.2 (TID 28) in 9351 ms on 198.202.103.48 (executor 2) (2/2)
+2022-11-01 15:46:54,645 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.2, whose tasks have all completed, from pool 
+2022-11-01 15:46:54,645 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Add.scala:44) finished in 12.541 s
+2022-11-01 15:46:54,645 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:46:54,645 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 1)
+2022-11-01 15:46:54,645 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:46:54,645 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:46:54,646 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:46:54,646 INFO scheduler.OutputCommitCoordinator: Reusing state from previous attempt of stage 3.
+2022-11-01 15:46:54,648 INFO memory.MemoryStore: Block broadcast_13 stored as values in memory (estimated size 7.8 KiB, free 433.9 MiB)
+2022-11-01 15:46:54,649 INFO memory.MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 433.9 MiB)
+2022-11-01 15:46:54,650 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:46:54,650 INFO spark.SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:46:54,650 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:46:54,651 INFO scheduler.TaskSchedulerImpl: Adding task set 3.2 with 2 tasks resource profile 0
+2022-11-01 15:46:54,651 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.2 (TID 31) (198.202.103.48, executor 2, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:54,652 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.2 (TID 32) (198.202.103.48, executor 2, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:46:54,661 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 198.202.103.48:34433 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:46:54,666 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58366
+2022-11-01 15:47:39,476 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.2 (TID 29) in 45693 ms on 198.202.103.48 (executor 2) (1/2)
+2022-11-01 15:47:40,848 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.2 (TID 30) in 47064 ms on 198.202.103.48 (executor 2) (2/2)
+2022-11-01 15:47:40,848 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.2, whose tasks have all completed, from pool 
+2022-11-01 15:47:40,849 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at Add.scala:46) finished in 47.070 s
+2022-11-01 15:47:40,849 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:47:40,849 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 3)
+2022-11-01 15:47:40,849 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2022-11-01 15:47:40,849 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:48:07,561 ERROR scheduler.TaskSchedulerImpl: Lost executor 2 on 198.202.103.48: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:48:07,561 WARN scheduler.TaskSetManager: Lost task 1.0 in stage 3.2 (TID 32) (198.202.103.48 executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:48:07,561 WARN scheduler.TaskSetManager: Lost task 0.0 in stage 3.2 (TID 31) (198.202.103.48 executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+2022-11-01 15:48:07,562 INFO scheduler.DAGScheduler: Executor lost: 2 (epoch 9)
+2022-11-01 15:48:07,562 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+2022-11-01 15:48:07,562 INFO storage.BlockManagerMasterEndpoint: Removing block manager BlockManagerId(2, 198.202.103.48, 34433, None)
+2022-11-01 15:48:07,562 INFO storage.BlockManagerMaster: Removed 2 successfully in removeExecutor
+2022-11-01 15:48:07,562 INFO scheduler.DAGScheduler: Shuffle files lost for executor: 2 (epoch 9)
+2022-11-01 15:48:07,567 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/2 is now EXITED (Command exited with code 52)
+2022-11-01 15:48:07,567 INFO cluster.StandaloneSchedulerBackend: Executor app-20221101154408-0000/2 removed: Command exited with code 52
+2022-11-01 15:48:07,567 INFO storage.BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+2022-11-01 15:48:07,567 INFO storage.BlockManagerMaster: Removal of executor 2 requested
+2022-11-01 15:48:07,567 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asked to remove non-existent executor 2
+2022-11-01 15:48:07,568 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221101154408-0000/3 on worker-20221101154400-198.202.103.48-42819 (198.202.103.48:42819) with 128 core(s)
+2022-11-01 15:48:07,568 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221101154408-0000/3 on hostPort 198.202.103.48:42819 with 128 core(s), 1024.0 MiB RAM
+2022-11-01 15:48:07,591 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221101154408-0000/3 is now RUNNING
+2022-11-01 15:48:09,244 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.48:58410) with ID 3,  ResourceProfileId 0
+2022-11-01 15:48:09,337 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.48:32791 with 434.4 MiB RAM, BlockManagerId(3, 198.202.103.48, 32791, None)
+2022-11-01 15:48:09,400 INFO scheduler.TaskSetManager: Starting task 0.1 in stage 3.2 (TID 33) (198.202.103.48, executor 3, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:09,400 INFO scheduler.TaskSetManager: Starting task 1.1 in stage 3.2 (TID 34) (198.202.103.48, executor 3, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:09,549 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 198.202.103.48:32791 (size: 4.1 KiB, free: 434.4 MiB)
+2022-11-01 15:48:09,768 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58410
+2022-11-01 15:48:09,799 WARN scheduler.TaskSetManager: Lost task 0.1 in stage 3.2 (TID 33) (198.202.103.48 executor 3): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=0, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:48:09,799 INFO scheduler.TaskSetManager: task 0.1 in stage 3.2 (TID 33) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:48:09,800 INFO scheduler.DAGScheduler: Marking ShuffleMapStage 3 (map at Add.scala:46) as failed due to a fetch failure from ShuffleMapStage 2 (map at Add.scala:44)
+2022-11-01 15:48:09,800 WARN scheduler.TaskSetManager: Lost task 1.1 in stage 3.2 (TID 34) (198.202.103.48 executor 3): FetchFailed(null, shuffleId=3, mapIndex=-1, mapId=-1, reduceId=1, message=
+org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+)
+2022-11-01 15:48:09,800 INFO scheduler.TaskSetManager: task 1.1 in stage 3.2 (TID 34) failed, but the task will not be re-executed (either because the task failed with a shuffle data fetch failure, so the previous stage needs to be re-run, or because a different copy of the task has already succeeded).
+2022-11-01 15:48:09,800 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.2, whose tasks have all completed, from pool 
+2022-11-01 15:48:09,800 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (map at Add.scala:46) failed in 75.153 s due to org.apache.spark.shuffle.MetadataFetchFailedException: Missing an output location for shuffle 3
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2(MapOutputTracker.scala:1013)
+	at org.apache.spark.MapOutputTracker$.$anonfun$convertMapStatuses$2$adapted(MapOutputTracker.scala:1009)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at org.apache.spark.MapOutputTracker$.convertMapStatuses(MapOutputTracker.scala:1009)
+	at org.apache.spark.MapOutputTrackerWorker.getMapSizesByExecutorId(MapOutputTracker.scala:821)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:133)
+	at org.apache.spark.shuffle.ShuffleManager.getReader(ShuffleManager.scala:63)
+	at org.apache.spark.shuffle.ShuffleManager.getReader$(ShuffleManager.scala:57)
+	at org.apache.spark.shuffle.sort.SortShuffleManager.getReader(SortShuffleManager.scala:73)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:373)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:337)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-11-01 15:48:09,801 INFO scheduler.DAGScheduler: Resubmitting ShuffleMapStage 2 (map at Add.scala:44) and ShuffleMapStage 3 (map at Add.scala:46) due to fetch failure
+2022-11-01 15:48:10,001 INFO scheduler.DAGScheduler: Resubmitting failed stages
+2022-11-01 15:48:10,004 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:48:10,008 INFO memory.MemoryStore: Block broadcast_14 stored as values in memory (estimated size 6.9 KiB, free 433.9 MiB)
+2022-11-01 15:48:10,011 INFO memory.MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.9 MiB)
+2022-11-01 15:48:10,011 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:48:10,014 INFO spark.SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:48:10,015 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:48:10,015 INFO scheduler.TaskSchedulerImpl: Adding task set 2.3 with 2 tasks resource profile 0
+2022-11-01 15:48:10,017 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.3 (TID 35) (198.202.103.48, executor 3, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:10,045 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on 198.202.103.48:32791 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:48:10,060 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.48:32791 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-01 15:48:13,292 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.3 (TID 36) (198.202.103.48, executor 3, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:18,089 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.3 (TID 35) in 8072 ms on 198.202.103.48 (executor 3) (1/2)
+2022-11-01 15:48:24,877 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.3 (TID 36) in 11585 ms on 198.202.103.48 (executor 3) (2/2)
+2022-11-01 15:48:24,877 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.3, whose tasks have all completed, from pool 
+2022-11-01 15:48:24,877 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Add.scala:44) finished in 14.871 s
+2022-11-01 15:48:24,877 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:48:24,878 INFO scheduler.DAGScheduler: running: Set()
+2022-11-01 15:48:24,878 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 3, ResultStage 4)
+2022-11-01 15:48:24,878 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:48:24,878 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:48:24,878 INFO scheduler.OutputCommitCoordinator: Reusing state from previous attempt of stage 3.
+2022-11-01 15:48:24,880 INFO memory.MemoryStore: Block broadcast_15 stored as values in memory (estimated size 7.8 KiB, free 433.8 MiB)
+2022-11-01 15:48:24,882 INFO memory.MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 433.8 MiB)
+2022-11-01 15:48:24,883 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.1 KiB, free: 434.3 MiB)
+2022-11-01 15:48:24,883 INFO spark.SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:48:24,883 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[4] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:48:24,883 INFO scheduler.TaskSchedulerImpl: Adding task set 3.3 with 2 tasks resource profile 0
+2022-11-01 15:48:24,884 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.3 (TID 37) (198.202.103.48, executor 3, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:24,885 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.3 (TID 38) (198.202.103.48, executor 3, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:24,899 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on 198.202.103.48:32791 (size: 4.1 KiB, free: 434.4 MiB)
+2022-11-01 15:48:24,907 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.48:58410
+2022-11-01 15:48:42,103 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.3 (TID 37) in 17219 ms on 198.202.103.48 (executor 3) (1/2)
+2022-11-01 15:48:42,111 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.3 (TID 38) in 17226 ms on 198.202.103.48 (executor 3) (2/2)
+2022-11-01 15:48:42,112 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.3, whose tasks have all completed, from pool 
+2022-11-01 15:48:42,112 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (map at Add.scala:46) finished in 17.233 s
+2022-11-01 15:48:42,112 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:48:42,112 INFO scheduler.DAGScheduler: running: Set()
+2022-11-01 15:48:42,112 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2022-11-01 15:48:42,112 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:48:42,113 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44), which has no missing parents
+2022-11-01 15:48:42,114 INFO memory.MemoryStore: Block broadcast_16 stored as values in memory (estimated size 6.9 KiB, free 433.8 MiB)
+2022-11-01 15:48:42,116 INFO memory.MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 433.8 MiB)
+2022-11-01 15:48:42,116 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 3.8 KiB, free: 434.3 MiB)
+2022-11-01 15:48:42,117 INFO spark.SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:48:42,117 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:48:42,117 INFO scheduler.TaskSchedulerImpl: Adding task set 0.3 with 2 tasks resource profile 0
+2022-11-01 15:48:42,118 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.3 (TID 39) (198.202.103.48, executor 3, partition 1, NODE_LOCAL, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:42,131 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on 198.202.103.48:32791 (size: 3.8 KiB, free: 434.4 MiB)
+2022-11-01 15:48:42,142 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.48:32791 (size: 27.6 KiB, free: 434.3 MiB)
+2022-11-01 15:48:45,292 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.3 (TID 40) (198.202.103.48, executor 3, partition 0, ANY, 4514 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:49,788 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.3 (TID 39) in 7670 ms on 198.202.103.48 (executor 3) (1/2)
+2022-11-01 15:48:52,686 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.3 (TID 40) in 7394 ms on 198.202.103.48 (executor 3) (2/2)
+2022-11-01 15:48:52,686 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.3, whose tasks have all completed, from pool 
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Add.scala:44) finished in 10.574 s
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: running: Set()
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 4)
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:48:52,687 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46), which has no missing parents
+2022-11-01 15:48:52,689 INFO memory.MemoryStore: Block broadcast_17 stored as values in memory (estimated size 7.8 KiB, free 433.8 MiB)
+2022-11-01 15:48:52,690 INFO memory.MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 433.8 MiB)
+2022-11-01 15:48:52,691 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:48:52,691 INFO spark.SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:48:52,692 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:48:52,692 INFO scheduler.TaskSchedulerImpl: Adding task set 1.3 with 2 tasks resource profile 0
+2022-11-01 15:48:52,693 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.3 (TID 41) (198.202.103.48, executor 3, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:52,693 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.3 (TID 42) (198.202.103.48, executor 3, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-01 15:48:52,704 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on 198.202.103.48:32791 (size: 4.2 KiB, free: 434.3 MiB)
+2022-11-01 15:48:52,711 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.48:58410
+2022-11-01 15:49:11,707 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.3 (TID 42) in 19014 ms on 198.202.103.48 (executor 3) (1/2)
+2022-11-01 15:49:11,742 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.3 (TID 41) in 19049 ms on 198.202.103.48 (executor 3) (2/2)
+2022-11-01 15:49:11,742 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.3, whose tasks have all completed, from pool 
+2022-11-01 15:49:11,742 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at Add.scala:46) finished in 19.054 s
+2022-11-01 15:49:11,743 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-01 15:49:11,743 INFO scheduler.DAGScheduler: running: Set()
+2022-11-01 15:49:11,743 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2022-11-01 15:49:11,743 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-01 15:49:11,743 INFO scheduler.DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[14] at saveAsTextFile at Add.scala:58), which has no missing parents
+2022-11-01 15:49:11,756 INFO memory.MemoryStore: Block broadcast_18 stored as values in memory (estimated size 86.4 KiB, free 433.7 MiB)
+2022-11-01 15:49:11,757 INFO memory.MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 31.4 KiB, free 433.7 MiB)
+2022-11-01 15:49:11,758 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on exp-4-27.expanse.sdsc.edu:45083 (size: 31.4 KiB, free: 434.3 MiB)
+2022-11-01 15:49:11,758 INFO spark.SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1388
+2022-11-01 15:49:11,760 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 4 (MapPartitionsRDD[14] at saveAsTextFile at Add.scala:58) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-01 15:49:11,760 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 2 tasks resource profile 0
+2022-11-01 15:49:11,762 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 43) (198.202.103.48, executor 3, partition 0, PROCESS_LOCAL, 4338 bytes) taskResourceAssignments Map()
+2022-11-01 15:49:11,762 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 44) (198.202.103.48, executor 3, partition 1, PROCESS_LOCAL, 4338 bytes) taskResourceAssignments Map()
+2022-11-01 15:49:11,790 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on 198.202.103.48:32791 (size: 31.4 KiB, free: 434.3 MiB)
+2022-11-01 15:49:11,857 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.48:58410
+2022-11-01 15:49:11,862 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.48:58410
+2022-11-01 15:51:30,450 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 43) in 138690 ms on 198.202.103.48 (executor 3) (1/2)
+2022-11-01 15:51:35,190 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 44) in 143428 ms on 198.202.103.48 (executor 3) (2/2)
+2022-11-01 15:51:35,190 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2022-11-01 15:51:35,191 INFO scheduler.DAGScheduler: ResultStage 4 (runJob at SparkHadoopWriter.scala:83) finished in 143.445 s
+2022-11-01 15:51:35,193 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-01 15:51:35,194 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+2022-11-01 15:51:35,195 INFO scheduler.DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:83, took 445.605682 s
+2022-11-01 15:51:35,259 INFO io.SparkHadoopWriter: Job job_202211011544091690936386528613310_0014 committed.
+2022-11-01 15:51:35,265 INFO server.AbstractConnector: Stopped Spark@6bdc2a41{HTTP/1.1, (http/1.1)}{exp-4-27:4040}
+2022-11-01 15:51:35,266 INFO ui.SparkUI: Stopped Spark web UI at http://exp-4-27.expanse.sdsc.edu:4040
+2022-11-01 15:51:35,269 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+2022-11-01 15:51:35,269 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+2022-11-01 15:51:35,280 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2022-11-01 15:51:35,314 INFO memory.MemoryStore: MemoryStore cleared
+2022-11-01 15:51:35,314 INFO storage.BlockManager: BlockManager stopped
+2022-11-01 15:51:35,315 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2022-11-01 15:51:35,317 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2022-11-01 15:51:35,337 INFO spark.SparkContext: Successfully stopped SparkContext
+2022-11-01 15:51:36,289 INFO util.ShutdownHookManager: Shutdown hook called
+2022-11-01 15:51:36,290 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-12c13597-9d28-41be-91af-1825b7360abe
+2022-11-01 15:51:36,296 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-304ca3a0-580a-4839-9291-68e7d4baa7a4
+Stopping namenodes on [exp-4-27]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:FfFxX2frugjKUDaR/EbYhdcVrphEdzcd3AyKPh3mRQM.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/bdumpa/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/bdumpa/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-4-27]
+Copying Hadoop logs back to /home/bdumpa/expansecluster/logs...
+'/scratch/bdumpa/job_17256613/logs' -> '/home/bdumpa/expansecluster/logs'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-namenode-exp-4-27.out' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-namenode-exp-4-27.out'
+'/scratch/bdumpa/job_17256613/logs/SecurityAuth-bdumpa.audit' -> '/home/bdumpa/expansecluster/logs/SecurityAuth-bdumpa.audit'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-datanode-exp-4-27.out' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-datanode-exp-4-27.out'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-namenode-exp-4-27.log' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-namenode-exp-4-27.log'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-datanode-exp-4-27.log' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-datanode-exp-4-27.log'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.out' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.out'
+'/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.log' -> '/home/bdumpa/expansecluster/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.log'
+'/scratch/bdumpa/job_17256613/logs/spark-bdumpa-org.apache.spark.deploy.master.Master-1-exp-4-27.out' -> '/home/bdumpa/expansecluster/logs/spark-bdumpa-org.apache.spark.deploy.master.Master-1-exp-4-27.out'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000025'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/fsimage_0000000000000000025.md5'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/VERSION'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/fsimage_0000000000000000025'
+removed '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed directory '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary/current'
+removed directory '/scratch/bdumpa/job_17256613/tmp/dfs/namesecondary'
+removed directory '/scratch/bdumpa/job_17256613/tmp/dfs'
+removed directory '/scratch/bdumpa/job_17256613/tmp'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/VERSION'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/tmp'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/scanner.cursor'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/dfsUsed'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/VERSION'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/rbw'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741830_1006.meta'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741828_1004.meta'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741826'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741829'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741828'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741827'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741830'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741829_1005.meta'
+removed '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0/subdir0'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized/subdir0'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current/finalized'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816/current'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current/BP-1367302772-198.202.103.48-1667342619816'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data/current'
+removed directory '/scratch/bdumpa/job_17256613/hdfs_data'
+removed '/scratch/bdumpa/job_17256613/logs/SecurityAuth-bdumpa.audit'
+removed '/scratch/bdumpa/job_17256613/logs/spark-bdumpa-org.apache.spark.deploy.master.Master-1-exp-4-27.out'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-namenode-exp-4-27.out'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.out'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-secondarynamenode-exp-4-27.log'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-namenode-exp-4-27.log'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-datanode-exp-4-27.out'
+removed '/scratch/bdumpa/job_17256613/logs/hadoop-bdumpa-datanode-exp-4-27.log'
+removed directory '/scratch/bdumpa/job_17256613/logs'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/fsimage_0000000000000000000.md5'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/edits_0000000000000000001-0000000000000000025'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/VERSION'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/seen_txid'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/edits_inprogress_0000000000000000026'
+removed '/scratch/bdumpa/job_17256613/namenode_data/current/fsimage_0000000000000000000'
+removed directory '/scratch/bdumpa/job_17256613/namenode_data/current'
+removed directory '/scratch/bdumpa/job_17256613/namenode_data'
+removed directory '/scratch/bdumpa/job_17256613/pids'
